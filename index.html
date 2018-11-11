@@ -16,8 +16,11 @@
     <!-- font-family: 'Josefin Sans', sans-serif; -->
     <!--  Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <!-- Animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!--  my css files -->
     <link href= "main.css" type="text/css" rel="stylesheet"/>
+
     <!-- View port meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -26,17 +29,16 @@
   <body>
 
     <!-- - - - - - -  ANCOR POINT - - - - - - - - -->
-    <div class="closed menu">
-      <i class="fas fa-chevron-circle-left"></i>
-    </div>
 
-    <nav class="col-6 open menu">
-      <a href="#home"> HOME </a>
-      <a href="#schedual"> SCHEDUAL </a>
-      <a href="#presenters"> PRESENTERS </a>
-      <a href="#get-involved"> GET INVOLVED </a>
-      <a href="#contact">CONTACT </a>
-      <i class="fas fa-chevron-circle-right"></i>
+    <nav id="nav-menu" class="col-6 open menu">
+      <div class="right"><i id="nav-icon" class="fas fa-chevron-circle-left fa-3x fa-rotate-360"></i></div>
+      <div id="nav-menu-content" class="padded-top-30px mob-show">
+        <h3><a href="#home"> HOME </a></h3>
+        <h3><a href="#schedual"> SCHEDUAL </a></h3>
+        <h3><a href="#presenters"> PRESENTERS </a></h3>
+        <h3><a href="#get-involved"> GET INVOLVED </a></h3>
+        <h3><a href="#contact">CONTACT </a></h3>
+      </div>
     </nav>
   <!-- - - - - - - - - - MOBILE NAVIGATION - - - - - - - - - -->
     <nav class="mobile-nav">
@@ -128,7 +130,7 @@
 
     <!-- - - - - - -THIS IS WHERE WE INCLUDE IMAGES _ WE COULD ALSO INCLUDE WEATHER INFO ETC -->
 
- <section class="grid squares">
+    <section class="grid squares">
      <div id="breakfast" class="col-6_sm-12 sqr-1 padded-5 breakfast">
        <!-- <img src="https://images.unsplash.com/photo-1533979640417-546cbced58b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0155605217b66e1bfe8b306cbc102414&auto=format&fit=crop&w=1567&q=80" alt="placeholderimage"> -->
      </div>

@@ -49,7 +49,18 @@ $(document).ready(function() {
      $(".burger-button").toggleClass("active");
      $(".burger-menu").slideToggle();
    });
-   
+
+console.log("dgfdfgdfg")
+   $("#nav-icon").click( function() {
+     $("#nav-menu").toggleClass("nav-menu-active");
+     $("#nav-menu-content").slideToggle();
+     $("#nav-menu-content").toggleClass("animated");
+     $("#nav-menu-content").toggleClass("fadeInRightBig");
+     // $("#nav-menu-content").toggleClass("delay-2s");
+   });
+
+
+
 
 
  }); // end of doc ready

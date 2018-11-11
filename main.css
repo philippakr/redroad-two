@@ -29,7 +29,9 @@ img {
   max-width: 100%; /* This ensures an image never breaks it's container */
 }
 
-body { padding-right: 5rem;}
+body { padding-right: 5rem;
+    background-color: rgba(154,44,48, 0.8);
+  }
 
 a {
   color: inherit;
@@ -51,6 +53,7 @@ a {
 .padded-5 { padding: 5%; }
 
 .padded-top-1 { padding-top: 1%;}
+.padded-top-30px { padding-top: 30px;}
 
 .mob-show { display: none;}
 
@@ -115,6 +118,36 @@ section:focus {
 
 /* - - - - - - - - NAVIGATION - - - - - - -  */
 
+/* - - - - - -- -  DESKTOP NAVIGATION - - - -  */
+.menu {
+  background-color: #9f2c30;
+  color: #f4f1f1;
+  border-color: #2b2b2b;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  width:5rem;
+  transition: all 0.5s ease-in;
+}
+
+.nav-menu-active {
+  width:20rem;
+  background-color: rgba(154,44,48,0.6);
+}
+
+.nav-menu-active .fa-rotate-360 {
+  transform: rotate(-180deg);
+}
+
+.menu i {
+  transition: all 0.5s ease-in;
+}
+
+/* - - - - - - -  MOBILE NAVIGATION - - - - - - */
 .mobile-nav {
   display: none;
 }
@@ -198,7 +231,7 @@ section:focus {
   color: #9f2c30;
   font-family: 'Josefin Sans', sans-serif;
   display:block;
-  padding:5px 15px;
+  padding:10px 15px;
   text-align:center;
   white-space:nowrap;
 }
@@ -247,20 +280,10 @@ header i {
 header a {
   font-size: 2rem;
 }
-.menu {
-  background-color: #9f2c30;
-  color: #f4f1f1;
-  border-color: #2b2b2b;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 2rem;
-  width:5rem;
-}
 
+
+
+/* - - - - - MENU IS IN THE NAVIGATION - - - - - -  */
 
 .logo {
     margin: auto;
