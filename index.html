@@ -25,10 +25,38 @@
   </head>
   <body>
 
+    <!-- - - - - - -  ANCOR POINT - - - - - - - - -->
     <div class="closed menu">
       <i class="fas fa-chevron-circle-left"></i>
     </div>
 
+    <nav class="col-6 open menu">
+      <a href="#home"> HOME </a>
+      <a href="#schedual"> SCHEDUAL </a>
+      <a href="#presenters"> PRESENTERS </a>
+      <a href="#get-involved"> GET INVOLVED </a>
+      <a href="#contact">CONTACT </a>
+      <i class="fas fa-chevron-circle-right"></i>
+    </nav>
+  <!-- - - - - - - - - - MOBILE NAVIGATION - - - - - - - - - -->
+    <nav class="mobile-nav">
+      <div class="burger-button">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+      </div>
+
+      <div class="burger-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#schedual">Schedual</a>
+        <a href="#presenters">Presenters</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+
+     <!-- - - - - - - - - END OF NAVIGATION SECTION - - - - - - - - - - - - -->
 
     <header class="grid">
       <!-- - - - - - - - THIS IS THE SOCIAL SECTION - - - - - - - - - - - - - -->
@@ -46,24 +74,15 @@
 
       <!-- - - - -  - - - -THIS IS WHEN THE MENU IS CLOSED - - - - - - - - - -  -->
 
+      <!-- - - - - - - - - THIS IS GOING TO BE THE FIXED LISTEN - - - - - - - - -->
 
-
-      <!-- - - - - - - - - THIS IS WHEN THE MENU WILL BE OPEN - - - - - - - - -  -->
-
-      <!-- <div class="col-6 open menu">
-        <a href="#home"> HOME </a>
-        <a href="#schedual"> SCHEDUAL </a>
-        <a href="#presenters"> PRESENTERS </a>
-        <a href="#get involved"> GET INVOLVED </a>
-        <a href="#contact">CONTACT </a>
-        <i class="fas fa-chevron-circle-right"></i>
-      </div> -->
+      <a class="ll-but" href="http://radioplayerhosting.com/stations/live/1400/index.html"> - LISTEN LIVE - </a>
 
     </header>
 
       <!-- - - - - - - - - ABOUT SECTION - - - - - - - - -  -->
 
-    <section class="grid about">
+    <section id="about" class="grid about">
       <div class="col-6 info triangles padded-5">
         <h3> - About - <h3>
           <p> Redroad on 102.4 FM, is the youth radio station for South Rotherham. We specialise in broadcasting local information, and covering issues relating to young people, playing music that fits the lifestyle of young people. <p>
@@ -77,7 +96,7 @@
     </section>
 
     <!-- - - - - - - - PRESENTERS SECTION - - - - - - - - - -  -->
-    <section class="grid presenters">
+    <section id="presenters" class="grid presenters">
 
       <a href="presenters" class="col-6 triangles padded-5 bg-img">
         <!-- - - - -  BACKGORUND IMAGE WITH OVERLAY ON HOVER - - - - -  -->
@@ -95,7 +114,7 @@
 
     <!-- - - - - - - SCHEDUAL SECTION - - - - - - - - - - -->
 
-    <section class="grid schedual">
+    <section id="schedual" class="grid schedual">
       <div class="col-6 info triangles padded-5">
         <h3> - Schedual - <h3>
           <p> Don't miss your favorite schedualed Red Road shows and find just when you can listen to throwback shows with 80's ballads, wake up the right way with the Breakfast show and start your friday night right. See what's playing every day this week! <p>
@@ -110,45 +129,37 @@
     <!-- - - - - - -THIS IS WHERE WE INCLUDE IMAGES _ WE COULD ALSO INCLUDE WEATHER INFO ETC -->
 
  <section class="grid squares">
-     <div class="col-6_sm-12 sqr-1 padded-5 breakfast">
+     <div id="breakfast" class="col-6_sm-12 sqr-1 padded-5 breakfast">
        <!-- <img src="https://images.unsplash.com/photo-1533979640417-546cbced58b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0155605217b66e1bfe8b306cbc102414&auto=format&fit=crop&w=1567&q=80" alt="placeholderimage"> -->
      </div>
 
-     <div class="col-6_sm-12 sqr-2 padded-5 bg-img wheather">
-       <!-- <img src="https://images.unsplash.com/photo-1533979640417-546cbced58b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0155605217b66e1bfe8b306cbc102414&auto=format&fit=crop&w=1567&q=80" alt="placeholderimage"> -->
-       <h2> THIS IS WHERE AN IMAGE WILL GO </h2>
+     <div id="Weather"class="col-6_sm-12 sqr-2 padded-5 weather">
      </div>
 
 
-     <div class="col-6_sm-12 sqr-3 padded-5 bg-img news">
-       <!-- <img src="https://images.unsplash.com/photo-1533979640417-546cbced58b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0155605217b66e1bfe8b306cbc102414&auto=format&fit=crop&w=1567&q=80" alt="placeholderimage"> -->
-       <h2> THIS IS WHERE AN IMAGE WILL GO </h2>
-    </div>
+     <div id="news" class="col-6_sm-12 sqr-3 padded-5 news">
+     </div>
 
-    <div class="col-6_sm-12 sqr-4 padded-5 bg-img weekend">
-       <!-- <img src="https://images.unsplash.com/photo-1533979640417-546cbced58b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0155605217b66e1bfe8b306cbc102414&auto=format&fit=crop&w=1567&q=80" alt="placeholderimage"> -->
-       <h2> THIS IS WHERE AN IMAGE WILL GO </h2>
+    <div id="weekend" class="col-6_sm-12 sqr-4 padded-5 bg-img weekend">
      </div>
   </section>
 
     <!-- - - - - - - - - GET INVOLVED SECTION  - - - - - - - - - - - - - -->
-  <section class="padded-5 get-involved">
-    <a href="Get involved"> - GET INVOLVED - </a>
+  <section id="" class="padded-5 get-involved parallax">
+    <a href="get-involved"> - GET INVOLVED - </a>
     <!-- THIS WILL HAVE A BACKGROUND IMAGE THE BACKGROUND IMAGE MIGHT WORK BETTER AS THE LINK AND HOVER ON TEXT... -->
   </section>
 
   <!-- - - - - - - - - - THIS IS THE FOOTER SECTION - - - - - - - - - -->
 
   <section class="grid footer">
-    <div class="col-4_sm-12 padded-5">
-      <h4> Information will go here </h4>
+
+    <div class="col-6_sm-12 padded-5">
+        <h2> CONTACT </br> <span> US </span> </h2>
+        <p> Red Road has many points of contacts. Tak to us about events or advertising. Enter your detials and send us a messege and a member of the Red Road team will get in touch.
     </div>
 
-    <div class="col-4_sm-12 padded-5">
-        <h4> Information will go here </h4>
-    </div>
-
-    <div class="col-4_sm-12">
+    <div id="contact" class="col-6_sm-12">
       <form action="https://formspree.io/philippakrevitt@gmail.com" method="POST" class="full-form col-6_sm-12 form" >
         <input type="text" name="name" class="contact-name" placeholder="Your name">
         <input type="email" name="_replyto" class="contact-email" placeholder="Your email">
@@ -163,6 +174,9 @@
       <h3>  - DISCLAIMER -  </h3>
       <p>The views and opinions expressed on Redroad FM are those of the presenters, guests and callers, and are not necessarily those of this station. The shows are for entertainment and information purposes only and are not intended to exclude or offend. This radio station gives people a chance to discuss or present topics which are not always discussed in a social context. Therefore the station includes programmes that may be considered to include adult content which some people may find offensive. All content copyright redroadfm 2013 </p>
   </section>
+
+  <script src="jquery.js"></script>
+  <script src="main.js"></script>
 
   </body>
 </html>

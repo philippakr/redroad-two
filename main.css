@@ -109,6 +109,127 @@ p {
   font-size: 1rem;
 }
 
+section:focus {
+  outline: none;
+}
+
+/* - - - - - - - - NAVIGATION - - - - - - -  */
+
+.mobile-nav {
+  display: none;
+}
+
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+/* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 10;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: #9f2c30;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f1f1;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #9f2c30;
+  font-family: 'Josefin Sans', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* - - - - - - LISTEN LIVE ICON - - - - - - - */
+
+.ll-but {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 2%;
+  background: #f2f1f1;
+  display: block;
+  display: block;
+  width: 10%;
+  margin: auto;
+  margin-top: 20px;
+  transition: color 2s;
+  position: fixed;
+  font-size: .5rem;
+  text-shadow: 5px;
+  bottom: 2vh;
+  right: 15vh;
+
+}
+
+.ll-but:hover{
+      background-color: #2b2b2b;
+      transition: color 2s;
+      color: #f4f1f1;
+}
+
 /* - - - - - - - - HEADER - - - - - - - - - */
 header {
   padding: 0;
@@ -121,6 +242,10 @@ header {
 header i {
   color: white;
   padding: 30px;
+}
+
+header a {
+  font-size: 2rem;
 }
 .menu {
   background-color: #9f2c30;
@@ -162,6 +287,13 @@ header i {
   width: 90%;
   margin: auto;
   margin-top: 20px;
+  transition: color 2s;
+}
+
+.listenlive:hover{
+      background-color: #9f2c30;
+      transition: color 2s;
+      color: #f4f1f1;
 }
 
 .ListenLive a {
@@ -188,7 +320,8 @@ header i {
 /* - - - - - - - - - - - SQUARES - - - - - - - - - - -  */
 
 .squares{
-  min-height: 600px;
+  min-height: 750px;
+  padding-top:
 }
 
 .breakfast {
@@ -199,20 +332,48 @@ header i {
   whitespace: nowrap; */
 }
 
+.weather {
+  background-image: url("ASSETS/weather.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.news {
+  background-image: url("ASSETS/news.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* - - - - - - - - - - GET INVOLVED - - - - - - - -- - */
 
+.parallax {
+  /* The image used */
+  background-image: url("ASSETS/getinvolved.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
   .get-involved {
-    background-image: url("ASSETS/getinvolved.jpg");
+    /* background-image: url("ASSETS/getinvolved.jpg"); */
     background-size: : cover;
     background-position: center;
     padding: 6rem;
+    transition: color 2s;
   }
 
   .get-involved a {
     color: #2b2b2b;
     background-color: #f4f1f1;
     padding: 3rem;
-    width: 40%;
+    min-width:40%;
     display:block;
     margin: auto;
     margin-top: 20px;
@@ -220,18 +381,43 @@ header i {
     text-align: center;
   }
 
+  .get-involved:hover{
+      background-color: #9f2c30;
+      transition: color 2s;
+      color: #f4f1f1;
+    }
+
 /* - - - - - - - - - - FOOTER - - - - - - - - - - - -  */
 
 *{padding:0;
 box-sizing:border-box;
 }
 
+.footer {
+  background-color: #2b2b2b;
+  padding: 2%;
+}
+
+.footer h2 {
+  color: #f4f1f1;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.footer span {
+  color: #9f2c30;
+}
+
+.footer p {
+  color: #f4f1f1;
+  font-family:'Josefin Sans', sans-serif;;
+}
+
 .full-form {
-    border: 1px solid #eee;
     padding: 1.5%;
     background-color: #2b2b2b;
     margin: auto;
-    width:100%;
+    min-width:100%;
 }
 .full-form input {
   padding: 2%;
@@ -244,7 +430,7 @@ input {border: 1px solid #2b2b2b;}
 
 .contact-but {
   background-color: #9f2c30;
-  color: #f41f1f;
+  color: #f4f1f1;
   transition: color 2s;
   width: 100%;
 }
@@ -290,4 +476,44 @@ textarea {
   background-color: #2b2b2b;
   text-align: center;
   padding: 3%;
+}
+
+/* - - - - - - MEDIA RULES - - - - - - - - - */
+
+@media(max-width: 576px) {
+
+    /* - - - NAVIGATION - - - */
+
+    .menu {
+      display:none;
+    }
+    .mobile-nav {
+      display:block;
+    }
+
+    body { padding:0;
+    }
+
+    /* - - - STYLES - - - */
+
+    header h1 {
+      font-size: 40px;
+    }
+
+    header h2 {
+      font-size: 20px;
+    }
+
+    .mobile-edit {
+      order:-1;
+    }
+    .goodnight h2 {
+      line-height: 55px;
+    }
+    .goodnight {
+      background-image: none;
+    }
+
+
+
 }
