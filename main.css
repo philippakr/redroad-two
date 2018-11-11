@@ -1,0 +1,293 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Single Page Website (index.html) (WELOVEIVAN)
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+
+
+
+/* ---- CSS RESET --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(200,200,200); */
+}
+
+img {
+  max-width: 100%; /* This ensures an image never breaks it's container */
+}
+
+body { padding-right: 5rem;}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.padded-1 { padding: 1%; }
+.padded-3 { padding: 3%; }
+.padded-5 { padding: 5%; }
+
+.padded-top-1 { padding-top: 1%;}
+
+.mob-show { display: none;}
+
+.bg-img {
+  background-image: url('ASSETS/temp-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----- UNIVERSAL STYLES --------------------------- */
+
+.bg-featured{
+  background-color: #9f2c30;
+  color: #f4f1f1;
+}
+
+.bg-dark {
+  background-color:#2b2b2b;
+  color: #f4f1f1;
+}
+
+.bg-light {
+  background-color: #2b2b2b;
+  color: #f4f1f1;
+
+}
+
+/* - - - - - Gridlex override - - - - -  */
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+
+
+/* BASICS DELETE LATER */
+
+h1, h2, h3, h4 p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 10rem;
+  font-family: 'Squada One', cursive;
+  text-align: center;
+  color: white;
+}
+h2 {
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* - - - - - - - - HEADER - - - - - - - - - */
+header {
+  padding: 0;
+  background-image: url("ASSETS/headerimage.jpg");
+  background-size: cover;
+  background-posiition: center;
+  background-color: rbga (24, 24, 24, 0.5);
+}
+
+header i {
+  color: white;
+  padding: 30px;
+}
+.menu {
+  background-color: #9f2c30;
+  color: #f4f1f1;
+  border-color: #2b2b2b;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  width:5rem;
+}
+
+
+.logo {
+    margin: auto;
+    display: block;
+    /* background-color: #2b2b2b; */
+    max-height: 35rem;
+    image-height:
+  }
+
+.logo h3 {
+  font-size: 3rem;
+  color: #f4f1f1;
+  text-align: center;
+  font-family:'Squada One', cursive;
+}
+
+.listenlive {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5%;
+  background: #f2f1f1;
+  display: block;
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.ListenLive a {
+  font-size: 4rem;
+  text-shadow: 5px;
+
+}
+
+/* - - - - - - - - - TRIANGLE LINKS - - - - - - - - - -  */
+.info {
+  background-color: #f4f1f1;
+}
+
+.trangles h3 {
+  padding-botton:1rem;
+
+}
+
+.presenters {
+  background-image: url("https://picsum.photos/200/300/?random")
+  background-image: cover;
+  background-image: center;
+}
+/* - - - - - - - - - - - SQUARES - - - - - - - - - - -  */
+
+.squares{
+  min-height: 600px;
+}
+
+.breakfast {
+  background-image: url("ASSETS/breakfast.jpg");
+  background-size: cover;
+  background-position: center;
+  /* display: block;
+  whitespace: nowrap; */
+}
+
+/* - - - - - - - - - - GET INVOLVED - - - - - - - -- - */
+
+  .get-involved {
+    background-image: url("ASSETS/getinvolved.jpg");
+    background-size: : cover;
+    background-position: center;
+    padding: 6rem;
+  }
+
+  .get-involved a {
+    color: #2b2b2b;
+    background-color: #f4f1f1;
+    padding: 3rem;
+    width: 40%;
+    display:block;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+
+/* - - - - - - - - - - FOOTER - - - - - - - - - - - -  */
+
+*{padding:0;
+box-sizing:border-box;
+}
+
+.full-form {
+    border: 1px solid #eee;
+    padding: 1.5%;
+    background-color: #2b2b2b;
+    margin: auto;
+    width:100%;
+}
+.full-form input {
+  padding: 2%;
+}
+
+input {border: 1px solid #2b2b2b;}
+
+.contact-name:: placeholder {text-align:center;
+}
+
+.contact-but {
+  background-color: #9f2c30;
+  color: #f41f1f;
+  transition: color 2s;
+  width: 100%;
+}
+.contact-but:hover{
+      background-color: #2b2b2b;
+      transition: color 2s;
+      color: #f4f1f1;
+}
+
+.contact-name {
+    width: 100%;
+}
+
+.contact-email {
+    width: 100%;
+}
+
+textarea {
+  display: block;
+  margin: 0 0 10px;
+  resize: none;
+  width: 100%;
+  padding:2%;
+}
+
+/* h1{
+  color: #b6b6b6;
+  text-align: center;
+  font-family:helvetica;
+  } */
+
+/* - - - - - - - - - - -  DISCLAIMER SECTION - - - - - - - - - - */
+.disclaimer h3 {
+  color: #9f2c30;
+}
+
+.disclaimer p {
+  color: #f4f1f1;
+  text-size: 0.3rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.disclaimer {
+  background-color: #2b2b2b;
+  text-align: center;
+  padding: 3%;
+}
