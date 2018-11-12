@@ -81,7 +81,10 @@ $(document).ready(function() {
   weekday[5] = "friday";
   weekday[6] = "saturday";
 
-  var today = weekday[d.getDay()];
+  var today = weekday[3];
+
+  //this is to make the select input chANGE
+  $("#sched-select").val(today);
   showDaySchedual(today);
 
    // THIS IS THE SCHEDUAL selector
@@ -95,6 +98,7 @@ $(document).ready(function() {
    });
 
    function showDaySchedual(day) {
+
      if (day === "monday"){
        $("#monday").removeClass("display-none")
        $("#tuesday").addClass("display-none")
@@ -174,6 +178,7 @@ $(document).ready(function() {
 
 
 // Slider
+
 
 
  }); // end of doc ready
