@@ -117,8 +117,9 @@
       </div>
 
       <div class="col-6">
-        <a href="schedual" class= "triangles padded-5">  </a>
-          <select class="what" name="what">
+
+        <a href="schedual" class= "triangles padded-5 week">  </a>
+          <select class="what" id="sched-select" name="what">
             <option value="monday">MONDAY</option>
             <option value="tuesday">TUESDAY</option>
             <option value="wednesday">WEDNESDAY</option>
@@ -127,38 +128,271 @@
             <option value="saturday">SATURDAY</option>
             <option value="sunday">SUNDAY</option>
           </select>
+
+
+      <!-- THIS IS MONDAY  -->
+      <div class="week" id="monday">
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 7:00am </span><span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 10:00am </span> <span> The Gary Jakson Experience </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 12:00am </span> <span> Lunchtime Live with Ernie </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 2:00pm </span> <span> Staffords World </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 5:00pm </span> <span> Redroad Drivetime with Kris </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 7:00pm </span> <span> The Seventies and Eighties Show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 10:00pm </span> <span> Late Night in the Attic </span> </h3>
+        </div>
+      </div>
+       <!-- THIS IS TUESDAY -->
+      <div class="week display-none" id="tuesday">
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 7:00am </span><span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 10:00am </span> <span> The JB Show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 12:00am </span> <span> Lunchtime with Lauren </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 2:00pm </span> <span> Toms Perfect Playlist </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 4:00pm </span> <span> The Swinging 60's </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 5:00pm </span> <span> Redroad Drivetime with Phil and Chris </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 7:00pm </span> <span> The Red Road Rock Show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3> <span class="times"> 11:00pm </span> <span> The Sound Lab </span> </h3>
+        </div>
+      </div>
+      <!-- THIS IS WEDNESDAY -->
+      <div class="week display-none" id="wednesday">
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">7:00am</span> <span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00am </span> <span> Wednesday Brunch </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 12:00am </span> <span> Lunchtime Live with Ernie </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 2:00pm </span><span> The Community Show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 4:00pm </span><span> Afternoon Antics </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 5:00pm </span><span> Redroad Drivetime with Gary </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00pm </span> <span> The Dark Side of the Moon </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 8:00pm </span><span> The Mystery Top 40 </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00pm </span><span> Full on Vybz </span> </h3>
+        </div>
+      </div>
+      <!--  THIS IS THURSDAY -->
+      <div class="week display-none" id="thursday">
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00am </span><span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00am </span><span> The JB show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 12:00am </span><span> The Midday Hit List </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 2:00pm </span><span> The Gareth Nelson Show </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 4:00pm </span> <span> Better in the 80's </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 5:00pm </span><span> Redroad Drivetime with Amy and Sal </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00pm </span><span> Fab N Groovy 60's </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 9:00pm </span><span> The Old Record Club </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 11:00pm </span><span> The Late Lounge </span> </h3>
+        </div>
+      </div>
+      <!-- THIS IS FRIDAY -->
+      <div class="week display-none" id="friday">
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00am </span><span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00am </span><span> Ernies Half Hour </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 11:00am </span><span> The Outreach Gang </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 12:00am </span><span> Lunchtime Live with Ernie </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 2:00pm </span><span> DJ Bezza's House Party </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 5:00pm </span><span> Redroad Drivetime with Max </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00pm </span><span> Readroad FMs Artist Spotlight </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 9:00pm </span><span> Aoki's House </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00pm </span><span> The Graeme Park Radio Show </span> </h3>
+        </div>
+      </div>
+      <!-- THIS IS SATURDAY  -->
+      <div class="week display-none" id="saturday">
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00am </span><span> The Pirate Years </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 8:00am </span><span> Saturday Breakfast with Scott</span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 10:00am </span><span> Brand New </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 12:00am </span><span> Saturday Shout </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 2:00pm </span><span> Better in the 80's </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 3:00pm </span><span> Non Stop Redroad </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 5:00pm </span><span> The Global Warm up with Judge Jules </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00pm </span><span> Club Redroad </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 9:00pm </span><span> The Saturday Night Party </span> </h3>
+        </div>
+      </div>
+      <!-- THIS IS SUNDAY -->
+      <div class="week display-none" id="sunday">
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times"> 7:00am </span><span> Todds Turntable </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  8:00am </span><span> Stevos Sunday Love Songs </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  10:00am </span><span> Tom's Perfect Playlist </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  12:00am </span><span> Volume 11 </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  2:00pm </span><span> All the Jazz </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  4:00pm </span><span> The Mystery Top 40 </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  5:00pm </span><span> Brand New </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  7:00pm </span><span> Soul Galore </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  10:00pm </span><span> The Soul and Funcky Groove </span> </h3>
+        </div>
+
+        <div class="padded-top-1 padded-bot-1">
+          <h3><span class="times">  10:00pm </span><span> The fabulous 50's </span> </h3>
+        </div>
+
       </div>
 
-      <div class= "monday">
-        <div>
-          <h3> 7:00am <span> Wake up with Aaron </span> </h3>
-        </div>
-
-        <div>
-          <h3> 10:00am <span> The Gary Jakson Experience </span> </h3>
-        </div>
-
-        <div>
-          <h3> 12:00am <span> Lunchtime Live with Ernie </span> </h3>
-        </div>
-
-        <div>
-          <h3> 2:00pm <span> Staffords World </span> </h3>
-        </div>
-
-        <div>
-          <h3> 5:00pm <span> Redroad Drivetime with Kris </span> </h3>
-        </div>
-
-        <div>
-          <h3> 7:00pm <span> The Seventies and Eighties Show </span> </h3>
-        </div>
-
-        <div>
-          <h3> 10:00pm <span> Late Night in the Attic </span> </h3>
-        </div>
-      </div>
-
+    </div>
 
 
     </section>

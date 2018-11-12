@@ -49,13 +49,18 @@ a {
 .no-padding { padding: 0; }
 
 .padded-1 { padding: 1%; }
+.padded-2 { padding: 2%;}
 .padded-3 { padding: 3%; }
 .padded-5 { padding: 5%; }
 
 .padded-top-1 { padding-top: 1%;}
 .padded-top-30px { padding-top: 30px;}
 
+.padded-bot-1 { padding-bottom: 1%;}
+
 .mob-show { display: none;}
+
+.display-none {display: none;}
 
 .bg-img {
   background-image: url('ASSETS/temp-bg.png');
@@ -366,15 +371,37 @@ header a {
 .triangles p {
   font-family:'Josefin Sans', sans-serif;
 }
+/* - - - - - Schedual - - - - - - - - - */
+
 
 .what {
   font-family:'Josefin Sans', sans-serif;
-  padding: 2%;
   font-size: 1rem;
-  position: center;
+  padding-left: 30px;
+  width:100%;
 }
 
+.week {
+  padding: 5px;
+}
 
+.week h3 {
+  background-color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 1rem;
+}
+
+.week span {
+  text-align:center;
+}
+
+.times {
+  width: 105px;
+  display: inline-block;
+}
+
+/* - - - - - - - - - PRESENTERS - - - - - - - - - - */
 
 .presenters {
   background-image: url("https://picsum.photos/200/300/?random")

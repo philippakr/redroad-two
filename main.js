@@ -66,7 +66,94 @@ console.log("dgfdfgdfg")
 
 
   // THIS IS THE PHOTO SECTION
-   
+
+
+   // THIS IS THE SCHEDUAL selector
+
+   $("#sched-select").change ( function (){
+     console.log ($(this).val())
+     var day = $(this).val();
+
+     if (day === "monday"){
+       $("#monday").removeClass("display-none")
+       $("#tuesday").addClass("display-none")
+       $("#wednesday").addClass("display-none")
+       $("#thursday").addClass("display-none")
+       $("#friday").addClass("display-none")
+       $("#saturday").addClass("display-none")
+       $("#sunday").addClass("display-none")
+
+     }
+
+     if (day === "tuesday"){
+       $("#tuesday").removeClass("display-none")
+       $("#monday").addClass("display-none")
+       $("#wednesday").addClass("display-none")
+       $("#thursday").addClass("display-none")
+       $("#friday").addClass("display-none")
+       $("#saturday").addClass("display-none")
+       $("#sunday").addClass("display-none")
+
+
+     }
+
+     if (day === "wednesday"){
+       $("#wednesday").removeClass("display-none")
+       $("#monday").addClass("display-none")
+       $("#tuesday").addClass("display-none")
+       $("#thursday").addClass("display-none")
+       $("#friday").addClass("display-none")
+       $("#saturday").addClass("display-none")
+       $("#sunday").addClass("display-none")
+
+     }
+
+     if (day === "thursday"){
+       $("#thursday").removeClass("display-none")
+       $("#monday").addClass("display-none")
+       $("#tuesday").addClass("display-none")
+       $("#wednesday").addClass("display-none")
+       $("#friday").addClass("display-none")
+       $("#saturday").addClass("display-none")
+       $("#sunday").addClass("display-none")
+
+     }
+
+     if (day === "friday"){
+       $("#friday").removeClass("display-none")
+       $("#monday").addClass("display-none")
+       $("#tuesday").addClass("display-none")
+       $("#wednesday").addClass("display-none")
+       $("#thursday").addClass("display-none")
+       $("#saturday").addClass("display-none")
+       $("#sunday").addClass("display-none")
+
+     }
+
+
+      if (day === "saturday"){
+        $("#saturday").removeClass("display-none")
+        $("#monday").addClass("display-none")
+        $("#tuesday").addClass("display-none")
+        $("#wednesday").addClass("display-none")
+        $("#thursday").addClass("display-none")
+        $("#friday").addClass("display-none")
+        $("#sunday").addClass("display-none")
+
+          }
+
+      if (day === "sunday"){
+        $("#sunday").removeClass("display-none")
+        $("#monday").addClass("display-none")
+        $("#tuesday").addClass("display-none")
+        $("#wednesday").addClass("display-none")
+        $("#thursday").addClass("display-none")
+        $("#friday").addClass("display-none")
+        $("#saturday").addClass("display-none")
+
+              }
+
+   })
 
 
 
