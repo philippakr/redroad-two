@@ -98,8 +98,9 @@ h1 {
   font-size: 10rem;
   font-family: 'Squada One', cursive;
   text-align: center;
-  color: white;
+  color: white;]
 }
+
 h2 {
   font-size: 2rem;
 }
@@ -242,7 +243,7 @@ section:focus {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   padding: 2%;
-  background: #f2f1f1;
+  background: rgba(244, 241, 241, 1);
   display: block;
   display: block;
   width: 10%;
@@ -262,6 +263,7 @@ section:focus {
       transition: color 2s;
       color: #f4f1f1;
 }
+
 
 /* - - - - - - - - HEADER - - - - - - - - - */
 header {
@@ -330,10 +332,49 @@ header a {
   background-color: #f4f1f1;
 }
 
+.about {
+  color: #2b2b2b;
+  background-color: #f4f1f1;
+  padding: 3rem;
+  min-width:40%;
+  display:block;
+  margin: auto;
+  /* margin-top: 20px; */
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.parallax-about {
+  /* The image used */
+  background-image: url("ASSETS/pexels-photo-1498964.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
 .trangles h3 {
   padding-botton:1rem;
 
 }
+
+.triangles p {
+  font-family:'Josefin Sans', sans-serif;
+}
+
+.what {
+  font-family:'Josefin Sans', sans-serif;
+  padding: 2%;
+  font-size: 1rem;
+  position: center;
+}
+
+
 
 .presenters {
   background-image: url("https://picsum.photos/200/300/?random")
@@ -367,6 +408,11 @@ header a {
   background-position: center;
 }
 
+.lunch {
+  background-image: url("ASSETS/lunch.jpg");
+  background-size: cover;
+  background-position: center;
+}
 /* - - - - - - - - - - GET INVOLVED - - - - - - - -- - */
 
 .parallax {
@@ -485,6 +531,9 @@ textarea {
   font-family:helvetica;
   } */
 
+.who {
+  width: 100%;
+}
 /* - - - - - - - - - - -  DISCLAIMER SECTION - - - - - - - - - - */
 .disclaimer h3 {
   color: #9f2c30;
@@ -499,6 +548,16 @@ textarea {
   background-color: #2b2b2b;
   text-align: center;
   padding: 3%;
+}
+
+/* - - - - - - - - - MADE BY ME - - - - - - - -  */
+
+.me {
+  color: rgba(244, 241, 241, 0.5);
+  text-size: 0.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align:center;
+  padding: 3px;
 }
 
 /* - - - - - - MEDIA RULES - - - - - - - - - */

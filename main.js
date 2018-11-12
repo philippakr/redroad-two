@@ -24,7 +24,7 @@ $(document).ready(function() {
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 8000, function() {
+          }, 1000, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -58,6 +58,15 @@ console.log("dgfdfgdfg")
      $("#nav-menu-content").toggleClass("fadeInRightBig");
      // $("#nav-menu-content").toggleClass("delay-2s");
    });
+
+
+   // THIS IS THE APPEAR FOR THE LISTEN LIVE
+
+     AOS.init();
+
+
+  // THIS IS THE PHOTO SECTION
+   
 
 
 

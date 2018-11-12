@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Animate.css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <!-- SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--  my css files -->
     <link href= "main.css" type="text/css" rel="stylesheet"/>
 
@@ -34,6 +36,7 @@
       <div class="right"><i id="nav-icon" class="fas fa-chevron-circle-left fa-3x fa-rotate-360"></i></div>
       <div id="nav-menu-content" class="padded-top-30px mob-show">
         <h3><a href="#home"> HOME </a></h3>
+        <h3><a href="#about">ABOUT</a></h3>
         <h3><a href="#schedual"> SCHEDUAL </a></h3>
         <h3><a href="#presenters"> PRESENTERS </a></h3>
         <h3><a href="#get-involved"> GET INVOLVED </a></h3>
@@ -49,12 +52,12 @@
       </div>
 
       <div class="burger-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#schedual">Schedual</a>
-        <a href="#presenters">Presenters</a>
-        <a href="#get-involved">Get Involved</a>
-        <a href="#contact">Contact Us</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#schedual">SCHEDUAL</a>
+        <a href="#presenters">PRESENTERS</a>
+        <a href="#get-involved">GET INVOLVED</a>
+        <a href="#contact">CONTACT US</a>
       </div>
     </nav>
 
@@ -68,8 +71,8 @@
         <i class="fab fa-instagram"></i>
       </div>
       <!-- - - - - -  LOGO AND LISTEN LIVE SIDE OF HEADER - - - - - - - - - - -->
-      <div class="col-10_sm-12 logo">
-        <h1> RED ROAD </h1>
+      <div class="col-10_sm-12 logo home">
+        <h1 class="animated jackInTheBox"> RED ROAD </h1>
         <h3>102.4 fm </h3>
         <a class="listenlive" href="http://radioplayerhosting.com/stations/live/1400/index.html"> - LISTEN LIVE - </a>
       </div>
@@ -78,55 +81,101 @@
 
       <!-- - - - - - - - - THIS IS GOING TO BE THE FIXED LISTEN - - - - - - - - -->
 
-      <a class="ll-but" href="http://radioplayerhosting.com/stations/live/1400/index.html"> - LISTEN LIVE - </a>
+      <div class="item item--primary ll-but"
+        <!-- data-aos="fade-left"
+        data-aos-anchor="#schedual"> -->
+      RIGHT
+      </div>
+
+      <a data-aos="fade-left" data-aos-anchor="#schedual"class="ll-but" href="http://radioplayerhosting.com/stations/live/1400/index.html"> - LISTEN LIVE - </a>
 
     </header>
 
       <!-- - - - - - - - - ABOUT SECTION - - - - - - - - -  -->
 
-    <section id="about" class="grid about">
-      <div class="col-6 info triangles padded-5">
-        <h3> - About - <h3>
-          <p> Redroad on 102.4 FM, is the youth radio station for South Rotherham. We specialise in broadcasting local information, and covering issues relating to young people, playing music that fits the lifestyle of young people. <p>
+    <section id="about" class="grid about parallax-about">
+      <div class="col-12 info triangles padded-5">
+        <h3> - About - </h3>
+          <p> Redroad on 102.4 FM, is the youth radio station for South Rotherham. We specialise in broadcasting local information, and covering issues relating to young people, playing music that fits the lifestyle of young people. </br> After being on air for a month in March 2007, Redroad FM covered the schools half term holiday and involved lots of organisations and individuals. In late 2007 Redroad FM was awarded a 5 year radio licence. The team of volunteers started to apply for funding to launch the station. The initial launch date of November 2009 was moved back to March 2010 and on Monday the 15th of March 2010 test transmissions started. The station launched on Saturday 27th of March 2010 at midday with the first show being presented by Aaron Outram. </br> That brings us up to today, Click on schedule to find out who’s on and when, then listen on 102.4 FM in South Rotherham, or hit on air now to hear us online.</br> We are always looking for people to join Redroad FM, If you would like to get involved in any aspect of Redroad, click on contact to find out the best person to speak to!
+           </p>
       </div>
 
-      <a href="about" class="col-6 triangles padded-5 bg-img">
         <!-- - - - -  BACKGORUND IMAGE WITH OVERLAY ON HOVER - - - - -  -->
 
         <!-- - - - - -  FIND OUT MORE BUTTON GETS BIGGER - - - - - -  -->
       </a>
     </section>
 
-    <!-- - - - - - - - PRESENTERS SECTION - - - - - - - - - -  -->
-    <section id="presenters" class="grid presenters">
 
-      <a href="presenters" class="col-6 triangles padded-5 bg-img">
-        <!-- - - - -  BACKGORUND IMAGE WITH OVERLAY ON HOVER - - - - -  -->
-
-
-        <!-- - - - - - FIND OUT MORE BUTTON GETS BIGGER - - - - - -  -->
-      </a>
-
-      <div class="col-6 info triangles padded-5">
-        <h3> - Presenters - <h3>
-          <p> Red Road presenters run a variety of diffrent shows.Find out more about weekday Breakfast presenter Aaron and who's behind some of the great shows that are on throughout the week. <p>
-      </div>
-
-    </section>
-
-    <!-- - - - - - - SCHEDUAL SECTION - - - - - - - - - - -->
+  <!-- - - - - - - SCHEDUAL SECTION - - - - - - - - - - -->
 
     <section id="schedual" class="grid schedual">
+
       <div class="col-6 info triangles padded-5">
-        <h3> - Schedual - <h3>
-          <p> Don't miss your favorite schedualed Red Road shows and find just when you can listen to throwback shows with 80's ballads, wake up the right way with the Breakfast show and start your friday night right. See what's playing every day this week! <p>
+        <h3> - Schedule - <h3>
+        <p> Don't miss your favorite schedualed Red Road shows and find just when you can listen to throwback shows with 80's ballads, wake up the right way with the Breakfast show and start your friday night right. See what's playing every day this week! <p>
       </div>
 
-      <a href="schedual" class="col-6 triangles padded-5 bg-img">
-        <!-- - - - -  BACKGORUND IMAGE WITH OVERLAY ON HOVER - - - - -  -->
-        <!-- - - - - - FIND OUT MORE BUTTON GETS BIGGER - - - - - -  -->
-      </a>
+      <div class="col-6">
+        <a href="schedual" class= "triangles padded-5">  </a>
+          <select class="what" name="what">
+            <option value="monday">MONDAY</option>
+            <option value="tuesday">TUESDAY</option>
+            <option value="wednesday">WEDNESDAY</option>
+            <option value="thursday">THURSDAY</option>
+            <option value="friday">FRIDAY</option>
+            <option value="saturday">SATURDAY</option>
+            <option value="sunday">SUNDAY</option>
+          </select>
+      </div>
+
+      <div class= "monday">
+        <div>
+          <h3> 7:00am <span> Wake up with Aaron </span> </h3>
+        </div>
+
+        <div>
+          <h3> 10:00am <span> The Gary Jakson Experience </span> </h3>
+        </div>
+
+        <div>
+          <h3> 12:00am <span> Lunchtime Live with Ernie </span> </h3>
+        </div>
+
+        <div>
+          <h3> 2:00pm <span> Staffords World </span> </h3>
+        </div>
+
+        <div>
+          <h3> 5:00pm <span> Redroad Drivetime with Kris </span> </h3>
+        </div>
+
+        <div>
+          <h3> 7:00pm <span> The Seventies and Eighties Show </span> </h3>
+        </div>
+
+        <div>
+          <h3> 10:00pm <span> Late Night in the Attic </span> </h3>
+        </div>
+      </div>
+
+
+
     </section>
+
+    <!-- - - - - - - - PRESENTERS SECTION - - - - - - - - - -  -->
+
+    <section id="presenters" class="grid presenters">
+      <a href="presenters" class="col-6 triangles padded-5 bg-img"></a>
+
+
+        <div class="col-6 info triangles padded-5">
+          <h3> - Presenters - <h3>
+          <p> Red Road presenters run a variety of diffrent shows. Find out more about weekday Breakfast presenter Aaron and who's behind some of the great shows that are on throughout the week. <p>
+        </div>
+
+    </section>
+
 
     <!-- - - - - - -THIS IS WHERE WE INCLUDE IMAGES _ WE COULD ALSO INCLUDE WEATHER INFO ETC -->
 
@@ -142,13 +191,13 @@
      <div id="news" class="col-6_sm-12 sqr-3 padded-5 news">
      </div>
 
-    <div id="weekend" class="col-6_sm-12 sqr-4 padded-5 bg-img weekend">
+    <div id="weekend" class="col-6_sm-12 sqr-4 padded-5 bg-img lunch">
      </div>
   </section>
 
     <!-- - - - - - - - - GET INVOLVED SECTION  - - - - - - - - - - - - - -->
   <section id="" class="padded-5 get-involved parallax">
-    <a href="get-involved"> - GET INVOLVED - </a>
+    <a href="mailto:aaron.outram@redroad.co.uk"> - GET INVOLVED - </a>
     <!-- THIS WILL HAVE A BACKGROUND IMAGE THE BACKGROUND IMAGE MIGHT WORK BETTER AS THE LINK AND HOVER ON TEXT... -->
   </section>
 
@@ -158,14 +207,21 @@
 
     <div class="col-6_sm-12 padded-5">
         <h2> CONTACT </br> <span> US </span> </h2>
-        <p> Red Road has many points of contacts. Tak to us about events or advertising. Enter your detials and send us a messege and a member of the Red Road team will get in touch.
+        <p> Red Road has many points of contacts. Talk to us about events or advertising. Enter your detials and send us a messege and a member of the Red Road team will get in touch.
     </div>
 
     <div id="contact" class="col-6_sm-12">
-      <form action="https://formspree.io/philippakrevitt@gmail.com" method="POST" class="full-form col-6_sm-12 form" >
+      <form action="https://formspree.io/aaron@redroadfm.com" method="POST" class="full-form col-6_sm-12 form" >
         <input type="text" name="name" class="contact-name" placeholder="Your name">
         <input type="email" name="_replyto" class="contact-email" placeholder="Your email">
-        <!-- - - - - WHO DO YOU WANT TO CONTACT?? - - - - - - - - - - -->
+          <select name="who">
+          <option value="studio">STUDIO</option>
+          <option value="show">GET INVOLVED</option>
+          <option value="advertising">ADVERTISING</option>
+          <option value="events">EVENTS</option>
+          <option value="music">GET YOUR MUSIC ON THE PLAYLIST</option>
+          <option value="enquires">ENQUIRES</option>
+          </select>
         <textarea rows="7"> Tell us what you want to say </textarea>
         <input type="submit" value="Submit" class=contact-but>
       </form>
@@ -175,10 +231,27 @@
     <div class="col-12 disclaimer">
       <h3>  - DISCLAIMER -  </h3>
       <p>The views and opinions expressed on Redroad FM are those of the presenters, guests and callers, and are not necessarily those of this station. The shows are for entertainment and information purposes only and are not intended to exclude or offend. This radio station gives people a chance to discuss or present topics which are not always discussed in a social context. Therefore the station includes programmes that may be considered to include adult content which some people may find offensive. All content copyright redroadfm 2013 </p>
+    </div>
+
+
+    <!-- - - - - - - - MADE BY - - - - -   -->
+
+    <div class="col-12 me">
+      <hr>
+      </br>
+      <h4> Philippa Revitt 2018 </h4>
+    </div>
+
+
   </section>
 
+  <!-- Jquery -->
   <script src="jquery.js"></script>
+  <!-- SCROLL -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- MAIN JS -->
   <script src="main.js"></script>
+
 
   </body>
 </html>
