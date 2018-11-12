@@ -156,7 +156,7 @@ console.log("dgfdfgdfg")
    })
 
 
-
+// Slider
 
 
  }); // end of doc ready

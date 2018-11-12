@@ -408,6 +408,8 @@ header a {
   background-image: cover;
   background-image: center;
 }
+
+
 /* - - - - - - - - - - - SQUARES - - - - - - - - - - -  */
 
 .squares{
@@ -498,6 +500,7 @@ box-sizing:border-box;
   color: #f4f1f1;
   font-size: 3rem;
   margin: 1rem;
+  font-weight: bolder;
 }
 
 .footer span {
@@ -559,8 +562,9 @@ textarea {
   } */
 
 .who {
-  width: 100%;
+  width:100%;
 }
+
 /* - - - - - - - - - - -  DISCLAIMER SECTION - - - - - - - - - - */
 .disclaimer h3 {
   color: #9f2c30;
