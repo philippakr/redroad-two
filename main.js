@@ -50,7 +50,7 @@ $(document).ready(function() {
      $(".burger-menu").slideToggle();
    });
 
-console.log("dgfdfgdfg")
+
    $("#nav-icon").click( function() {
      $("#nav-menu").toggleClass("nav-menu-active");
      $("#nav-menu-content").slideToggle();
@@ -68,12 +68,33 @@ console.log("dgfdfgdfg")
   // THIS IS THE PHOTO SECTION
 
 
+
+  // HERE IS THE DAY AUTO MATED THANNNG
+
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "sunday";
+  weekday[1] = "monday";
+  weekday[2] = "tuesday";
+  weekday[3] = "wednesday";
+  weekday[4] = "thursday";
+  weekday[5] = "friday";
+  weekday[6] = "saturday";
+
+  var today = weekday[d.getDay()];
+  showDaySchedual(today);
+
    // THIS IS THE SCHEDUAL selector
 
    $("#sched-select").change ( function (){
-     console.log ($(this).val())
+
      var day = $(this).val();
 
+     showDaySchedual(day);
+
+   });
+
+   function showDaySchedual(day) {
      if (day === "monday"){
        $("#monday").removeClass("display-none")
        $("#tuesday").addClass("display-none")
@@ -93,8 +114,6 @@ console.log("dgfdfgdfg")
        $("#friday").addClass("display-none")
        $("#saturday").addClass("display-none")
        $("#sunday").addClass("display-none")
-
-
      }
 
      if (day === "wednesday"){
@@ -130,7 +149,6 @@ console.log("dgfdfgdfg")
 
      }
 
-
       if (day === "saturday"){
         $("#saturday").removeClass("display-none")
         $("#monday").addClass("display-none")
@@ -151,9 +169,8 @@ console.log("dgfdfgdfg")
         $("#friday").addClass("display-none")
         $("#saturday").addClass("display-none")
 
-              }
-
-   })
+          }
+   }
 
 
 // Slider
