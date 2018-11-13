@@ -277,6 +277,7 @@ header {
   background-size: cover;
   background-posiition: center;
   background-color: rbga (24, 24, 24, 0.5);
+  min-height: 100vh;
 }
 
 header i {
@@ -293,7 +294,8 @@ header a {
 /* - - - - - MENU IS IN THE NAVIGATION - - - - - -  */
 
 .logo {
-    margin: auto;
+    margin-left: auto;
+    margin-right:auto;
     display: block;
     /* background-color: #2b2b2b; */
     max-height: 35rem;
@@ -442,6 +444,12 @@ header a {
   background-image: url("ASSETS/lunch.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.box-link {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 /* - - - - - - - - - - GET INVOLVED - - - - - - - -- - */
 
@@ -610,7 +618,7 @@ textarea {
     /* - - - STYLES - - - */
 
     header h1 {
-      font-size: 40px;
+      font-size: 6rem;
     }
 
     header h2 {
