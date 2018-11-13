@@ -81,7 +81,7 @@ $(document).ready(function() {
   weekday[5] = "friday";
   weekday[6] = "saturday";
 
-  var today = weekday[3];
+  var today = weekday[d.getDay()];
 
   //this is to make the select input chANGE
   $("#sched-select").val(today);
